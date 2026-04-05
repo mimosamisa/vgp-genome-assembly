@@ -1,0 +1,89 @@
+#KEY	Hap1 stats_2	Hap2 stats_2
+# contigs	17	16
+# gaps	0	0
+# paths	17	16
+# segments	17	16
+# soft-masked bases	0	0
+Average contig length	715352.06	706531.69
+Average segment length	715352.06	706531.69
+Base composition (A:C:G:T)	3767629:2322702:2320143:3750511	3490418:2170161:2165539:3478389
+Contig L10	1	1
+Contig L100	17	16
+Contig L20	2	2
+Contig L30	3	3
+Contig L40	5	4
+Contig L50	6	5
+Contig L50	6	5
+Contig L50	6	5
+Contig L50	6	5
+Contig L60	7	7
+Contig L70	9	8
+Contig L80	11	10
+Contig L90	13	12
+Contig LG10	1	1
+Contig LG100	15	0
+Contig LG20	2	2
+Contig LG30	3	3
+Contig LG40	4	4
+Contig LG50	6	6
+Contig LG50	6	6
+Contig LG50	6	6
+Contig LG50	6	6
+Contig LG60	7	7
+Contig LG70	8	9
+Contig LG80	10	11
+Contig LG90	12	13
+Contig N10	1531728	1532843
+Contig N100	85850	185154
+Contig N20	1091839	1090521
+Contig N30	1091004	1089326
+Contig N40	949013	1077964
+Contig N50	923452	922430
+Contig N50	923452	922430
+Contig N50	923452	922430
+Contig N50	923452	922430
+Contig N60	813039	784072
+Contig N70	745651	744844
+Contig N80	576535	576755
+Contig N90	439841	440041
+Contig NG10	1531728	1532843
+Contig NG100	271940	0
+Contig NG20	1091839	1090521
+Contig NG30	1091004	1089326
+Contig NG40	1078099	1077964
+Contig NG50	923452	813311
+Contig NG50	923452	813311
+Contig NG50	923452	813311
+Contig NG50	923452	813311
+Contig NG60	813039	784072
+Contig NG70	784311	666912
+Contig NG80	667180	562548
+Contig NG90	562559	316416
+Contig auN	904515.40	895018.82
+Contig auNG	936364.06	861278.90
+Expected genome size	11747352	11747352
+GC content %	38.18	38.35
+Gap L10	0	0
+Gap L100	0	0
+Gap L20	0	0
+Gap L30	0	0
+Gap L40	0	0
+Gap L50	0	0
+Gap L60	0	0
+Gap L70	0	0
+Gap L80	0	0
+Gap L90	0	0
+Gap N10	0	0
+Gap N100	0	0
+Gap N20	0	0
+Gap N30	0	0
+Gap N40	0	0
+Gap N50	0	0
+Gap N60	0	0
+Gap N70	0	0
+Gap N80	0	0
+Gap N90	0	0
+Largest contig	1531728	1532843
+Smallest contig	85850	185154
+Total contig length	12160985	11304507
+Total segment length	12160985	11304507
