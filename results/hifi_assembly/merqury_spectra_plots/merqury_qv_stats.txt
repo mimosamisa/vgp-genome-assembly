@@ -1,0 +1,7 @@
+## Merqury QV Statistics
+
+| Assembly     | Scope | Kmers only in Assembly | Total Assembly Kmers | Database Kmers | QV      |
+|-------------|-------|----------------------|-------------------|----------------|---------|
+| assembly_01 | all   | 116,114,831          | 301,026,089       | 13,010,260     | 89.25   |
+| assembly_02 | all   | 107,928,111          | 301,026,082       | 13,010,260     | 82.96   |
+| bothall     | all   | 130,102,441          | 301,026,099       | 13,010,260     | 99.99   |
