@@ -1,0 +1,6 @@
+# Merqury completeness statistics
+# Columns: assembly | kmers_only_in_assembly | kmers_shared | total_db_kmers | completeness_%
+
+assembly_01   31   12160475   13010260   89.2487
+assembly_02    0   11304027   13010260   82.9562
+both          32   23464502   13010260   99.9999
