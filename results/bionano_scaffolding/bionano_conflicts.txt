@@ -1,0 +1,2 @@
+# xMapId  refQry  refId  leftRefBkpt  rightRefBkpt  alignmentOrientation  refQry  qryId  leftQryBkpt  rightQryBkpt  alignmentOrientation
+# No conflicts detected — 0 cuts made to Bionano maps, 0 cuts made to NGS sequences
