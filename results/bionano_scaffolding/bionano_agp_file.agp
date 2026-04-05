@@ -1,0 +1,19 @@
+| Obj_Name                | Obj_Start | Obj_End  | PartNum | Compnt_Type | CompntId_GapLength      | CompntStart_GapType | CompntEnd_Linkage | Orientation_LinkageEvidence |
+|-------------------------|-----------|----------|---------|-------------|------------------------|-------------------|-----------------|----------------------------|
+| Super-Scaffold_1        | 1         | 949013   | 1       | W           | h1tg000009l_path       | 1                 | 949013           | +                          |
+| Super-Scaffold_2        | 1         | 439841   | 1       | W           | h1tg000017l_path       | 1                 | 439841           | +                          |
+| Super-Scaffold_3        | 1         | 562559   | 1       | W           | h1tg000016l_path       | 1                 | 562559           | +                          |
+| Super-Scaffold_4        | 1         | 576535   | 1       | W           | h1tg000015l_path       | 1                 | 576535           | +                          |
+| Super-Scaffold_5        | 1         | 1531728  | 1       | W           | h1tg000014l_path       | 1                 | 1531728          | +                          |
+| Super-Scaffold_6        | 1         | 318638   | 1       | W           | h1tg000013l_path       | 1                 | 318638           | +                          |
+| Super-Scaffold_7        | 1         | 813039   | 1       | W           | h1tg000012l_path       | 1                 | 813039           | +                          |
+| Super-Scaffold_8        | 1         | 230306   | 1       | W           | h1tg000011l_path       | 1                 | 230306           | +                          |
+| Super-Scaffold_10       | 1         | 271940   | 1       | W           | h1tg000001l_path       | 1                 | 271940           | +                          |
+| Super-Scaffold_11       | 1         | 1091839  | 1       | W           | h1tg000008l_path       | 1                 | 1091839          | +                          |
+| Super-Scaffold_12       | 1         | 1078099  | 1       | W           | h1tg000007l_path       | 1                 | 1078099          | +                          |
+| Super-Scaffold_13       | 1         | 784311   | 1       | W           | h1tg000006l_path       | 1                 | 784311           | +                          |
+| Super-Scaffold_14       | 1         | 923452   | 1       | W           | h1tg000005l_path       | 1                 | 923452           | +                          |
+| Super-Scaffold_15       | 1         | 667180   | 1       | W           | h1tg000004l_path       | 1                 | 667180           | +                          |
+| Super-Scaffold_16       | 1         | 745651   | 1       | W           | h1tg000003l_path       | 1                 | 745651           | +                          |
+| Super-Scaffold_17       | 1         | 1091004  | 1       | W           | h1tg000002l_path       | 1                 | 1091004          | +                          |
+| h1tg000010l_path_obj    | 1         | 85850    | 1       | W           | h1tg000010l_path       | 1                 | 85850            | +                          |
