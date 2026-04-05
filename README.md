@@ -276,13 +276,13 @@ aa: 99.4%   ab: 0.58%   kcov: 25   err: 9.43e-06   model fit: 0.0498   len: 11,7
 
 #### GenomeScope2 Plots
 
-**Linear plot:**
+**Linear plot**
 
-**Log-scale plot:**
+**Log-scale plot**
 
-**Transformed linear plot:**
+**Transformed linear plot**
 
-**Transformed log plot:**
+**Transformed log plot**
 
 #### Interpretation
 
@@ -425,26 +425,6 @@ The **number of contigs (16–17) closely matches the 16 haploid chromosomes** o
 - Hap1: `C:94.1%[S:92.3%,D:1.8%],F:2.7%,M:3.2%,n:2137`
 - Hap2: `C:88.7%[S:87.2%,D:1.5%],F:2.9%,M:8.4%,n:2137`
 
-#### BUSCO Summary Images
-
-**Hap1 BUSCO Assessment:**
-
-![BUSCO Hap1 Summary](results/hifi_assembly/busco_hap1_summary.png)
-
-**Hap2 BUSCO Assessment:**
-
-![BUSCO Hap2 Summary](results/hifi_assembly/busco_hap2_summary.png)
-
-#### Interpretation
-
-**Hap1 (94.1% complete)** shows excellent gene-space recovery, close to the theoretical maximum for a diploid assembly with this level of heterozygosity. The 92.3% single-copy completeness is the core metric — it indicates the vast majority of expected Saccharomycetes orthologs are present exactly once, as expected for a properly phased haplotype assembly.
-
-The **1.8% duplicated BUSCOs** in Hap1 reflect a small number of genes present on both haplotypes that hifiasm was unable to fully disentangle into separate haplotypes. This is normal for a Hi-C-phased assembly without parental trio data — some genomically similar regions remain collapsed or are redundantly represented. The **3.2% missing** (67 genes) may reflect genuinely absent genes, regions of genuine sequence collapse, or rare assembly gaps at chromosomal ends.
-
-**Hap2 (88.7% complete)** shows lower but still strong completeness. The higher missing rate (**8.4%, 181 genes**) is expected and biologically consistent: Hap2 in a pseudohaplotype-style assembly typically captures less of the genome's total gene content than Hap1, particularly in regions where the two haplotypes were not cleanly separated. Some genes that are physically present in Hap2's genomic regions may have been assigned exclusively to Hap1 during phasing. This hap1/hap2 asymmetry (94.1% vs 88.7%) mirrors the assembly size asymmetry (12.16 Mb vs 11.30 Mb) and is scientifically coherent.
-
-Notably, the duplicated BUSCO rate is **low in both haplotypes (1.5–1.8%)**, confirming that the Hi-C phasing was largely successful at separating heterozygous alleles without placing both copies in the same haplotype assembly — a false duplication artifact that would have inflated this percentage substantially.
-
 **Comparison with tutorial:** The tutorial reports similar BUSCO completeness values in the same range for both haplotypes with the saccharomycetes lineage. The asymmetry between hap1 and hap2 completeness is also described as expected behavior in the tutorial.
 
 ### Step 7: K-mer Based Evaluation with Merqury
@@ -482,57 +462,6 @@ Notably, the duplicated BUSCO rate is **low in both haplotypes (1.5–1.8%)**, c
 | both (combined) | 32 | 23,464,502 | — | **~99.9999** |
 
 > **QV interpretation:** The QV value here is the Merqury completeness score (k-mer completeness), not a Phred-scale quality value. The near-perfect combined completeness (~100%) means the two haplotypes together capture essentially all k-mers present in the read set.
-
-#### Merqury Spectra-CN Plots
-
-The copy-number (CN) spectrum plots show, for each k-mer multiplicity value, how many k-mers are found in the reads, colored by how many times they appear in the assembly.
-
-**Spectra-CN (Hap1 — filled):**
-
-![Merqury spectra-cn Hap1 filled](results/hifi_assembly/merqury_spectra_plots/spectra_cn_hap1_fl.png)
-
-**Spectra-CN (Hap1 — line):**
-
-![Merqury spectra-cn Hap1 line](results/hifi_assembly/merqury_spectra_plots/spectra_cn_hap1_ln.png)
-
-**Spectra-CN (Hap2 — filled):**
-
-![Merqury spectra-cn Hap2 filled](results/hifi_assembly/merqury_spectra_plots/spectra_cn_hap2_fl.png)
-
-**Spectra-CN (Hap2 — line):**
-
-![Merqury spectra-cn Hap2 line](results/hifi_assembly/merqury_spectra_plots/spectra_cn_hap2_ln.png)
-
-**Combined spectra-CN (both assemblies — filled):**
-
-![Merqury spectra-cn combined filled](results/hifi_assembly/merqury_spectra_plots/spectra_cn_combined_fl.png)
-
-**Combined spectra-CN (both assemblies — line):**
-
-![Merqury spectra-cn combined line](results/hifi_assembly/merqury_spectra_plots/spectra_cn_combined_ln.png)
-
-#### Spectra-ASM Plots
-
-The ASM spectrum shows how k-mers are distributed *between* the two assemblies, revealing which k-mers are shared and which are haplotype-specific.
-
-**Spectra-ASM (filled):**
-
-![Merqury spectra-asm filled](results/hifi_assembly/merqury_spectra_plots/spectra_asm_fl.png)
-
-**Spectra-ASM (line):**
-
-![Merqury spectra-asm line](results/hifi_assembly/merqury_spectra_plots/spectra_asm_ln.png)
-
-#### Interpretation
-
-**Completeness analysis:** The combined k-mer completeness of ~100% (both haplotypes together) is the most important figure — it means the two haplotype assemblies jointly contain essentially every k-mer present in the raw reads. No genomic sequence has been lost. This is the expected result for a well-assembled diploid genome. Hap1 alone recovers 89.25% of all read k-mers, and Hap2 alone recovers 82.96%, with the difference explained by their size asymmetry (~12.16 Mb vs ~11.30 Mb).
-
-**CN spectrum — per-haplotype analysis:** In the Hap1 spectra-cn plots, the dominant colored region is **red (k-mer copy number = 1 in the assembly)**, with a bimodal distribution matching the 25× and 50× peaks from the raw reads. The grey "read-only" region (k-mers in reads but absent from the assembly) is confined to very low coverage values, confirming that almost no genuine genomic sequence is missing. A small **blue region (CN=2)** at 50× confirms the expected homozygous k-mers being represented twice — once from each allele in the haploid assembly context.
-
-**ASM spectrum:** The large **green (shared)** peak centered at ~50× coverage confirms that k-mers from homozygous regions are correctly assigned to *both* haplotypes, as biologically expected. The **red (assembly_01-only)** and **blue (assembly_02-only)** peaks at ~25× represent haplotype-specific k-mers that have been correctly partitioned into their respective haplotypes by the Hi-C phasing. The rough symmetry of these two haploid peaks (with assembly_01's peak being slightly larger, consistent with Hap1's larger overall size) indicates good Hi-C-guided phasing performance. The minimal grey "read-only" signal at low coverage confirms the near-complete assembly.
-
-**Comparison with tutorial:** The tutorial shows a similar ASM spectrum with a large shared peak at 50× and two roughly equal haplotype-specific peaks at 25×. My results are consistent with this pattern. The slight asymmetry between assembly_01 and assembly_02 in my results (larger red peak vs smaller blue peak) mirrors the assembly size difference between hap1 and hap2, and is consistent with the tutorial's note that the haploid peaks may be "somewhat unevenly" split.
-
 
 ### Step 8: Bionano Hybrid Scaffolding
 
