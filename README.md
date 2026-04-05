@@ -18,13 +18,12 @@ De novo genome assembly of Saccharomyces cerevisiae using HiFi, Hi-C, and Bionan
    - [Step 5: GFA to FASTA Conversion and Assembly Statistics with gfastats](#step-5-gfa-to-fasta-conversion-and-assembly-statistics-with-gfastats)
    - [Step 6: Assembly Completeness with BUSCO](#step-6-assembly-completeness-with-busco)
    - [Step 7: K-mer Based Evaluation with Merqury](#step-7-k-mer-based-evaluation-with-merqury)
-   - [Step 8: Bionano Hybrid Scaffolding](#step-8-bionano-hybrid-scaffolding) *(outputs pending)*
-   - [Step 9: Hi-C Scaffolding with YaHS](#step-9-hi-c-scaffolding-with-yahs) *(outputs pending)*
-   - [Step 10: Final Assembly Evaluation with Pretext](#step-10-final-assembly-evaluation-with-pretext) *(outputs pending)*
+   - [Step 8: Bionano Hybrid Scaffolding](#step-8-bionano-hybrid-scaffolding)
+   - [Step 9: Hi-C Scaffolding with YaHS](#step-9-hi-c-scaffolding-with-yahs) 
+   - [Step 10: Final Assembly Evaluation with Pretext](#step-10-final-assembly-evaluation-with-pretext) 
 5. [Results Summary](#results-summary)
 6. [Discussion](#discussion)
 7. [Conclusion](#conclusion)
-8. [References](#references)
 
 ---
 
@@ -107,7 +106,7 @@ https://zenodo.org/record/5550653/files/SRR7126301_2.fastq.gz  → renamed: Hi-C
 https://zenodo.org/records/5887339/files/bionano.cmap
 ```
 
-> **Note on synthetic reads:** The HiFi reads used here were computationally generated from the *S. cerevisiae* S288C reference genome to simulate ~50× diploid sequencing coverage. This design allows precise benchmarking of assembly completeness and accuracy against the known reference, while faithfully representing the algorithmic challenges of diploid assembly.
+The HiFi reads used here were computationally generated from the *S. cerevisiae* S288C reference genome to simulate ~50× diploid sequencing coverage. This design allows precise benchmarking of assembly completeness and accuracy against the known reference, while faithfully representing the algorithmic challenges of diploid assembly.
 
 ## Methods / Pipeline
 
