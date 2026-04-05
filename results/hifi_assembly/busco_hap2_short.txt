@@ -1,0 +1,22 @@
+# BUSCO version is: 5.5.0
+# Lineage dataset: saccharomycetes_odb10 (2137 BUSCOs)
+# Mode: euk_genome_met | Gene predictor: metaeuk
+
+***** Results: *****
+
+C:88.7%[S:87.2%,D:1.5%],F:2.9%,M:8.4%,n:2137
+
+1895  Complete BUSCOs (C)
+1864  Complete and single-copy BUSCOs (S)
+  31  Complete and duplicated BUSCOs (D)
+  61  Fragmented BUSCOs (F)
+ 181  Missing BUSCOs (M)
+2137  Total BUSCO groups searched
+
+Assembly Statistics:
+  16  Number of scaffolds
+  16  Number of contigs
+  11304507  Total length
+  0.000%  Percent gaps
+  922 KB  Scaffold N50
+  922 KB  Contig N50
